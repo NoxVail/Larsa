@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   skip_before_action :verify_authenticity_token
-
+  
   def send_message
     token = ENV['TELEGRAM_BOT_TOKEN']
     channel = ENV['TELEGRAM_BOT_CHANNEL']
