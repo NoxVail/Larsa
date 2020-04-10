@@ -17,3 +17,14 @@ module Larsa
     # the framework and any gems in your application.
   end
 end
+
+module Api
+  class Application < Rails::Application
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins "*"
+        resource "*", headers: :any, methods: [:get, :post, :options]
+      end
+    end
+  end
+end

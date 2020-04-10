@@ -1,5 +1,5 @@
 current directory: /home/anton/project/Larsa/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/ext/bootsnap
-/usr/share/rvm/rubies/ruby-2.6.3/bin/ruby -I /usr/share/rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0 -r ./siteconf20200330-5609-1mo5qa9.rb extconf.rb
+/home/anton/.rbenv/versions/2.6.3/bin/ruby -I /home/anton/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20200410-5117-ln0xnq.rb extconf.rb
 creating Makefile
 
 current directory: /home/anton/project/Larsa/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/ext/bootsnap
@@ -32,4 +32,4 @@ linking shared-object bootsnap/bootsnap.so
 
 current directory: /home/anton/project/Larsa/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/ext/bootsnap
 make "DESTDIR=" install
-/usr/bin/install -m 0755 bootsnap.so ./.gem.20200330-5609-g4z8vf/bootsnap
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20200410-5117-1ptl6pe/bootsnap
