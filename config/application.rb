@@ -3,8 +3,8 @@ require 'rails/all'
 
 Bundler.require(*Rails.groups)
 
-config.bot_token = ENV.fetch(‘BOT_TOKEN’)
-config.bot_сhannel = ENV.fetch(‘BOT_CHANNEL’)
+# config.bot_token = ENV.fetch(‘BOT_TOKEN’)
+# config.bot_сhannel = ENV.fetch(‘BOT_CHANNEL’)
 
 module Larsa
   class Application < Rails::Application
