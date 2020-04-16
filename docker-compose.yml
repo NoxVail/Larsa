@@ -1,0 +1,39 @@
+version: '3'
+services:
+  api:
+    container_name: Larsa
+    command: rails s -b 0.0.0.0
+    build: .
+    env_file: .env
+    volumes:
+      - .:/app:rw
+    tty: true
+    stdin_open: true
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+      - pgadmin
+  db:
+    container_name: Larsa_db
+    image: postgres:12.2-alpine
+    env_file: .env
+    ports:
+      - 5432:5432
+    volumes:
+      - data-postgres:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: Larsa_pgadmin
+    env_file: .env
+    user: root
+    restart: always
+    ports:
+      - 5050:80
+    volumes:
+      - ./.db/pgadmin-servers.json:/pgadmin4/servers.json
+      - ./.db/pgadmin:/var/lib/pgadmin
+
+volumes:
+  data-postgres:
+    driver: local
