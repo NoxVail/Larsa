@@ -13,7 +13,7 @@ services:
       - 3000:3000
     depends_on:
       - db
-      - pgadmin
+
   db:
     container_name: Larsa_db
     image: postgres:12.2-alpine
@@ -22,6 +22,7 @@ services:
       - 5432:5432
     volumes:
       - data-postgres:/var/lib/postgresql/data
+
   pgadmin:
     image: dpage/pgadmin4
     container_name: Larsa_pgadmin
