@@ -1,7 +1,7 @@
 module API
   module V1
     class TelegramBot < Grape::API
-      desc "telegram_bot"
+      desc 'telegram_bot'
       post root: :message do
         token = ENV['TELEGRAM_BOT_TOKEN']
         channel = ENV['TELEGRAM_BOT_CHANNEL']
