@@ -23,8 +23,7 @@ module Larsa
 
     # Bot configuration files
     config.bot_token = ENV.fetch('TELEGRAM_BOT_TOKEN')
-    config.bot_сhannel = ENV.fetch('TELEGRAM_BOT_CHANNEL')
-
+    config.bot_channel = ENV.fetch('TELEGRAM_BOT_CHANNEL')
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
