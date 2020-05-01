@@ -17,6 +17,8 @@ gem 'puma', '~> 4.1'
 gem 'telegram-bot'
 gem 'grape'
 gem 'rack-cors'
+
+gem 'google-cloud-dialogflow'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
