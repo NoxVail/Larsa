@@ -20,6 +20,7 @@ Bundler.require(*Rails.groups)
 module Larsa
   class Application < Rails::Application
     config.load_defaults 6.0
+    config.autoload_paths << 'lib'
 
     # Bot configuration files
     config.bot_token = ENV.fetch('TELEGRAM_BOT_TOKEN')

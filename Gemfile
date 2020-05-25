@@ -14,11 +14,12 @@ gem 'puma', '~> 4.1'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'pry-rails'
 gem 'telegram-bot'
 gem 'grape'
 gem 'rack-cors'
 
-gem 'google-cloud-dialogflow'
+gem 'google-cloud-dialogflow-v2'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
