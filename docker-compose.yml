@@ -1,7 +1,7 @@
 version: '3'
 services:
   api:
-    container_name: Larsa
+    container_name: larsa
     command: /bin/sh -c "rm -f tmp/pids/server.pid && rails s -b 0.0.0.0 --pid tmp/pids/server.pid"
     build: .
     env_file: .env
@@ -15,7 +15,7 @@ services:
       - db
 
   db:
-    container_name: Larsa_db
+    container_name: larsa_db
     image: postgres:12.2-alpine
     env_file: .env
     ports:
@@ -25,7 +25,7 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4
-    container_name: Larsa_pgadmin
+    container_name: larsa_pgadmin
     env_file: .env
     user: root
     restart: always

@@ -19,7 +19,6 @@ gem 'telegram-bot'
 gem 'grape'
 gem 'rack-cors'
 
-gem 'google-cloud-dialogflow-v2'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

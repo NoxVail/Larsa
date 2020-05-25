@@ -29,7 +29,7 @@ development:
 
 test:
   <<: *default
-  database: Larsa_test
+  database: larsa_test
 
 production:
   <<: *default
